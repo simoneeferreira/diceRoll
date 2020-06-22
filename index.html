@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Dice Roller</title>
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand align-middle" href="index.html"><img src="/img/Dice.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Dice Roller</a>
+        </nav>
+    </header>
+    <main class="container-fluid bg-light">
+        <div class="row align-items-center">
+            <div class=" col-lg-2 col-md-4 col-sm-12">
+                <form action="post" action="" name="form"></form>
+                <table class="table table-borderless table-striped text-center text-uppercase">
+                    <thead>
+                        <tr>
+                            <th scope="col">Dice</th>
+                            <th scope="col">Roller</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><img src="/img/d4.png" alt="" width="50" height="50">D4</th>
+                            <td class="align-middle"><input type="number" name="d4" id="d4" size="3" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/img/d6.png" alt="" width="50" height="50">D6</th>
+                            <td class="align-middle"><input type="number" name="d6" id="d6" size="3" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/img/d8.png" alt="" width="50" height="50">D8</th>
+                            <td class="align-middle"><input type="number" name="d8" id="d8" size="3" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/img/d10.png" alt="" width="50" height="50">D10</th>
+                            <td class="align-middle"><input type="number" name="d10" id="d10" size="3" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/img/d100.png" alt="" width="50" height="50">D100</th>
+                            <td class="align-middle"><input type="number" name="d100" id="d100" size="3" value="0"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="/img/d12.png" alt="" width="50" height="50">D12</th>
+                            <td class="align-middle"><input type="number" name="d12" id="d12" size="3" value="0"></td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row"><img src="/img/d20.png" alt="" width="50" height="50">D20</th>
+                            <td class="align-middle"><input type="number" name="d20" id="d20" size="3" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" onclick="throwDices()" class="btn btn-success btn-block text-uppercase">Throw</button>
+            </div>
+            <div class="bg-success col-lg-7 col-md-4 col-sm-12">
+            </div>
+            <div class="bg-light col-lg-3 col-md-4 col-sm-12 mt-2">
+                <h4>Results:</h4>
+                <textarea class="form-control" name="runningTotal" id="total" cols="47" rows="30"></textarea>
+                <button type="reset" class="btn btn-danger text-uppercase mt-2 float-right"> Reset</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+            <a class="navbar-brand align-middle" href="index.html"><img src="/img/Dice.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
+            <a class="navbar-brand" href="https://simoneferreira.kantaros.net/"><span class="align-middle">Copyright &copy; 2020  Simone Ferreira. All Rights Reserved</span></a>
+        </nav>
+    </footer>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</html>
